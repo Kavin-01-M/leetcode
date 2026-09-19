@@ -5,10 +5,9 @@ class Solution {
         while(sum!=1 && !set.contains(sum)){
             set.add(sum);
             sum=0;
-            int num=n;
-            while(num!=0){
-                int rem=num%10;
-                num/=10;
+            while(n!=0){
+                int rem=n%10;
+                n/=10;
                 sum+=(rem*rem);
             }
             n=sum;
